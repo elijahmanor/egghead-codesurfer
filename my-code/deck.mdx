@@ -1,0 +1,20 @@
+import { Head } from 'mdx-deck'
+
+export { default as theme } from './theme'
+
+import { CodeSurfer } from "mdx-deck-code-surfer";
+
+<CodeSurfer
+  code={require("raw-loader!./snippets/2.snippet")}
+  title="Snippet from React"
+  notes="Initial Notes"
+  showNumbers
+  steps={[
+    { lines: [5], notes: "Line" },
+    { lines: [4, 5, 6], notes: "Lines" },
+    { range: [4, 6], notes: "Range" },
+    { ranges: [[4, 6], [11, 14]], notes: "Ranges" },
+    { tokens: {1: [2, 6]}, notes: "Tokens" },
+    { range: [30, 33], notes: "Scroll" },
+  ]}
+/>
